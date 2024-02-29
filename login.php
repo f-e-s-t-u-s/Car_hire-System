@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Log in</title>
     <link rel="stylesheet" href="logincode.css">
   </head>
   <body>
@@ -33,47 +33,41 @@
 
           <h2>Welcome Back! 👋🏻</h2>
           <p>Enter your credentials to access your account.</p>
-
-          <div class="input-container">
-            <div class="form-group">
-              <label for="firstName">First Name</label>
-              <input type="text" id="firstName" autocomplete="on">
-            </div>
-            <div class="form-group">
-                <label for="secName">Second Name</label>
-                <input type="text" id="secName" autocomplete="on">
+          <form action="LogInfm.php" method="post">
+            <div class="input-container">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="on">
               </div>
-            <div class="form-group">
-              <label for="phoneNumb">Phone Number</label>
-              <input type="tel" id="phoneNumb" autocomplete="on">
-            </div>
-            <div class="form-group">
-                <label for="IdNumb">Id Number</label>
-                <input type="number" id="firstName" autocomplete="on">
+              <div  class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" autocomplete="on">
               </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" autocomplete="on">
             </div>
-            <div class="form-group">
-              <label for="password">Password</label>
-              <input type="password" id="password">
+            <div class="remember-forgot">
+              <div class="remember-me">
+                <input type="checkbox" value="remember-me" id="remember-me">
+                <label for="remember-me">Remember me</label>
+              </div>
+  
+              <a href="forgotpas.php">Forgot password?</a>
             </div>
-          </div>
-
-          <div class="remember-forgot">
+  
+            <button type="submit" class="login-btn">Log In</button>
+  
+            <a href="signin.php"><button  type="button" class="login-btn">Sign In</button></a>
             
-            <a href="login.html">Already have an Account?</a>
-          </div>
+  
+            <div class="or-divider">or</div>
+  
+            <button type="button" class="google-signin">
+              <object data="./google.svg"></object>
+              <span>Sign in with Google</span>
+            </button>
+          </form>
+         
 
-          <button class="login-btn">Log In</button>
-
-          <div class="or-divider">or</div>
-
-          <button class="google-signin">
-            <object data="./google.svg"></object>
-            <span>Sign in with Google</span>
-          </button>
+          
         </div>
       </div>
     </section>

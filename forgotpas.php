@@ -22,17 +22,18 @@
           <h2>Password? </h2>
           <p>Enter your credentials to access your account.</p>
 
-          <div class="input-container">
+          <form class="input-container" action="forgetPasInf.php" method="POST">
             <div class="form-group">
               <label for="email">Email</label>
-              <input type="email" id="email" autocomplete="on">
+              <input type="email" id="email" name="email" autocomplete="on">
             </div>
+            <button type="submit" class="login-btn">Next</button>
             
-          </div>
+          </form>
 
           
 
-          <button class="login-btn">Next</button>
+          
 
          
           
